@@ -1,4 +1,4 @@
-@subdominio = fran
+@subdominio = 
 
 ###
 GET http://{{subdominio}}.onrender.com/
