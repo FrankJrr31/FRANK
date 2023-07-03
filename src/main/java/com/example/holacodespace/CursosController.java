@@ -27,7 +27,7 @@ public class CursosController {
 	@Autowired
   	private JdbcTemplate jdbcTemplate;
 
-	@PostMapping(path="/nuevo HTTP/1.1") // Map ONLY POST Requests
+	@PostMapping(path="/nuevo/HTTP/1.1") // Map ONLY POST Requests
 	public @ResponseBody String addNewUser (@RequestParam String nombre
 			, @RequestParam Integer creditos) {
 		Cursos c = new Cursos();
@@ -37,7 +37,7 @@ public class CursosController {
 		return "Saved";
 	}
 
-	@DeleteMapping(path="/eliminar HTTP/1.1")
+	@DeleteMapping(path="/eliminar/HTTP/1.1")
 	public @ResponseBody String delUser (@RequestParam Integer id) {
 		Cursos c = new Cursos();
 		c.setId(id);
@@ -47,7 +47,7 @@ public class CursosController {
 
 	
 
-	@GetMapping(path="/listar HTTP/1.1")
+	@GetMapping(path="/listar/HTTP/1.1")
 	public @ResponseBody Iterable<Cursos> getAllUsers() {
 		return cursosRepository.findAll();
 	}
