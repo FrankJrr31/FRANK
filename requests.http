@@ -1,4 +1,4 @@
-@subdominio = frank-p5lk
+@subdominio = fran
 
 ###
 GET http://{{subdominio}}.onrender.com/
@@ -18,10 +18,10 @@ GET http://{{subdominio}}.onrender.com/api/curso/listar/HTTP/1.1
 
 ###
 # 5: Nuevo Curso
-POST http://{{subdominio}}.onrender.com/api/curso/nuevo/HTTP/1.1
+POST https://{{subdominio}}.onrender.com/api/curso/nuevo/HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-nombre=dasarrollo
+nombre=dsw1
 &creditos=2
 
 ###
